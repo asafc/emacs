@@ -20,15 +20,9 @@
 (add-to-list 'load-path user-emacs-directory)
 (add-to-list 'load-path vendor-dir)
 
-;; my function to load .el files in the vendor dir
-(defun load-vendor (filename)
-  "loads a files from vendor dir"
-  (interactive)
-  (add-to-list 'load-path (concat vendor-dir filename))
-)
+;; Are we on a mac?
+(setq is-mac (equal system-type 'darwin))
 
 ;; packages
-(load-vendor "color-theme")
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-charcoal-black)
+(require 'appearance)
+(require 'bindings)
