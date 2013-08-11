@@ -10,7 +10,14 @@
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
 
-(provide 'appearance)
+;; show (line, col) of point
+(column-number-mode t)
+(line-number-mode t)
 
 ;; Highlight current line, currently off.
-(global-hl-line-mode 0)
+;;(global-hl-line-mode 1)
+
+;; Typing replaces selected region.
+(delete-selection-mode t)
+
+(provide 'appearance)
