@@ -12,10 +12,10 @@
 (global-set-key (kbd "M-<up>") 'beginning-of-buffer)
 (global-set-key (kbd "M-<down>") 'end-of-buffer)
 
-(global-set-key (kbd "C-<left>") 'backward-word)
-(global-set-key (kbd "C-<right>") 'forward-word)
-(global-set-key (kbd "C-<up>") 'backward-sentence)
-(global-set-key (kbd "C-<down>") 'forward-sentence)
+(global-set-key (kbd "C-M-<left>") 'backward-word)
+(global-set-key (kbd "C-M-<right>") 'forward-word)
+(global-set-key (kbd "C-M-<up>") 'backward-sentence)
+(global-set-key (kbd "C-M-<down>") 'forward-sentence)
 
 ;; some logical mac bindings 
 ;; (cut (d), copy (c), paste (v))
@@ -51,6 +51,15 @@
 (global-set-key [(control tab)] 'other-window)
 
 ;; autocomplete
-(global-set-key (kbd "M-SPC") 'dabbrev-expand)
+(global-set-key (kbd "C-SPC") 'dabbrev-expand)
+
+;; scroll up and down with super-<up/down>
+;; (scroll up goes down, and vice versa)
+(global-set-key (kbd "s-<up>") 'scroll-down-command)
+(global-set-key (kbd "s-<down>") 'scroll-up-command)
+
+;; commenting
+(global-set-key (kbd "M-3") 'my-comment-region)
+(global-set-key (kbd "M-4") 'my-uncomment-region)
 
 (provide 'bindings)
