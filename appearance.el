@@ -20,4 +20,9 @@
 ;; Typing replaces selected region.
 (delete-selection-mode t)
 
+;; require zoom-frm so we can zoom in/out text
+(require 'zoom-frm)
+
+(set-default-font "Monaco-15")
+
 (provide 'appearance)

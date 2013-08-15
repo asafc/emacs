@@ -62,4 +62,7 @@
 (global-set-key (kbd "M-3") 'my-comment-region)
 (global-set-key (kbd "M-4") 'my-uncomment-region)
 
+(global-set-key (kbd "M-=") 'zoom-in)
+(global-set-key (kbd "M--") 'zoom-out)
+
 (provide 'bindings)

@@ -24,5 +24,3 @@
 (require 'appearance)
 (require 'bindings)
 (require 'setup-ido)
-
-
