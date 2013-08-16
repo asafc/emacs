@@ -17,10 +17,15 @@
 (global-set-key (kbd "C-M-<up>") 'backward-sentence)
 (global-set-key (kbd "C-M-<down>") 'forward-sentence)
 
-;; some logical mac bindings 
+;; i take M-x from its standard place,
+;; since i don't use it that much,
+;; and i get confused with cut (kill-region)
+(global-set-key (kbd "M-/") 'execute-extended-command)
+
+;; some logical mac bindings
 ;; (cut (d), copy (c), paste (v))
 ;; (save (s), kill buffer (w), undo (z))
-(global-set-key (kbd "M-d") 'kill-region)
+(global-set-key (kbd "M-x") 'kill-region)
 (global-set-key (kbd "M-c") 'ns-copy-including-secondary)
 (global-set-key (kbd "M-v") 'yank)
 (global-set-key (kbd "M-s") 'save-buffer)
@@ -52,6 +57,7 @@
 
 ;; autocomplete
 (global-set-key (kbd "C-SPC") 'dabbrev-expand)
+(global-set-key (kbd "M-\\") 'dabbrev-expand)
 
 ;; scroll up and down with super-<up/down>
 ;; (scroll up goes down, and vice versa)
@@ -64,5 +70,11 @@
 
 (global-set-key (kbd "M-=") 'zoom-in)
 (global-set-key (kbd "M--") 'zoom-out)
+
+;; i use this a lot!
+(global-set-key (kbd "M-e") 'eval-buffer)
+
+;(global-set-key (kbd "M-d") 'mc/mark-next-like-this)
+;(global-set-key (kbd "C-M-g") 'mc/mark-all-like-this)
 
 (provide 'bindings)
