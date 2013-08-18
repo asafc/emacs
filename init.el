@@ -24,3 +24,7 @@
 (require 'appearance)
 (require 'bindings)
 (require 'setup-ido)
+(load-vendor "multiple-cursors")
+(require 'multiple-cursors)
+(load-vendor "expand-region")
+(require 'expand-region)

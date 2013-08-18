@@ -72,9 +72,14 @@
 (global-set-key (kbd "M--") 'zoom-out)
 
 ;; i use this a lot!
-(global-set-key (kbd "M-e") 'eval-buffer)
+(global-set-key (kbd "C-e") 'eval-buffer)
+(global-set-key (kbd "M-e") 'er/expand-region)
 
-;(global-set-key (kbd "M-d") 'mc/mark-next-like-this)
-;(global-set-key (kbd "C-M-g") 'mc/mark-all-like-this)
+(global-set-key (kbd "M-d") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-M-g") 'mc/mark-all-like-this)
+
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines)
+(global-set-key (kbd "C-S-c C-a") 'mc/edit-beginnings-of-lines)
 
 (provide 'bindings)

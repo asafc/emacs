@@ -1,3 +1,6 @@
 [submodule "vendor/multiple-cursors"]
 	path = vendor/multiple-cursors
 	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "vendor/expand-region"]
+	path = vendor/expand-region
+	url = https://github.com/magnars/expand-region.el.git
