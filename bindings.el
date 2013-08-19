@@ -82,4 +82,8 @@
 (global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines)
 (global-set-key (kbd "C-S-c C-a") 'mc/edit-beginnings-of-lines)
 
+;; helm
+(global-set-key (kbd "M-r") 'my-helm-multi-all)
+(global-set-key (kbd "M-p") 'helm-M-x)
+
 (provide 'bindings)

@@ -17,14 +17,26 @@
 (add-to-list 'load-path vendor-dir)
 (add-to-list 'load-path setup-dir)
 
-(require 'functions)
+;; set up package sources
+(require 'package)
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
 
-;; packages
+;; TODO: verify that packages are installed: helm
+
+;; my files --------------------------------------------------------------------
+
+(require 'functions)
 (require 'defaults)
 (require 'appearance)
 (require 'bindings)
+
+;; packages --------------------------------------------------------------------
 (require 'setup-ido)
 (load-vendor "multiple-cursors")
 (require 'multiple-cursors)
 (load-vendor "expand-region")
 (require 'expand-region)
+(require 'helm)
+(require 'setup-helm)
