@@ -25,4 +25,9 @@
 
 (set-default-font "Monaco-15")
 
+(setq visible-bell t
+      font-lock-maximum-decoration t
+      color-theme-is-global t
+      truncate-partial-width-windows nil)
+
 (provide 'appearance)
