@@ -12115,7 +12115,7 @@ its default 80x25 state -- dark grey on black."
      (flyspell-duplicate-face ((t (:bold t :foreground "Gold3" :underline t :weight bold))))
      (flyspell-incorrect-face ((t (:bold t :foreground "OrangeRed" :underline t :weight bold))))
      (font-lock-builtin-face ((t (:foreground "aquamarine"))))
-     (font-lock-comment-face ((t (:foreground "light blue"))))
+     (font-lock-comment-face ((t (:foreground "gold"))))
      (font-lock-constant-face ((t (:foreground "pale green"))))
      (font-lock-doc-face ((t (:foreground "light sky blue"))))
      (font-lock-doc-string-face ((t (:foreground "sky blue"))))
