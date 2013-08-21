@@ -28,6 +28,7 @@
 (global-set-key (kbd "M-x") 'kill-region)
 (global-set-key (kbd "M-c") 'ns-copy-including-secondary)
 (global-set-key (kbd "M-v") 'yank)
+
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "M-w") 'kill-this-buffer)
 (global-set-key (kbd "M-q") 'confirm-exit)
@@ -39,8 +40,6 @@
 (global-set-key (kbd "M-z") 'undo)
 
 ;; other bindings for standart keyboard
-;; TODO here: c-insert, s-delete, s-insert
-
 (global-set-key [(control meta b)] 'toggle-truncate-lines)
 (global-set-key [(meta g)] 'goto-line)
 
@@ -75,6 +74,7 @@
 (global-set-key (kbd "C-e") 'eval-buffer)
 (global-set-key (kbd "M-e") 'er/expand-region)
 
+(global-set-key (kbd "C-d") 'mc/mark-next-like-this)
 (global-set-key (kbd "M-d") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-M-g") 'mc/mark-all-like-this)
 
@@ -85,5 +85,7 @@
 ;; helm
 (global-set-key (kbd "M-r") 'my-helm-multi-all)
 (global-set-key (kbd "M-p") 'helm-M-x)
+
+(require 'bindings-external)
 
 (provide 'bindings)
