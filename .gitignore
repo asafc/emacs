@@ -1,1 +1,4 @@
 *~
+*.elc
+.mc-lists.el
+/elpa/archives
