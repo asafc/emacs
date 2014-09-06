@@ -40,3 +40,5 @@
 (require 'expand-region)
 (require 'helm)
 (require 'setup-helm)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

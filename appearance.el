@@ -6,6 +6,7 @@
 
 ;; selected theme for now, there are many others.
 (color-theme-charcoal-black)
+;(color-theme-solarized-dark)
 
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
@@ -29,5 +30,13 @@
       font-lock-maximum-decoration t
       color-theme-is-global t
       truncate-partial-width-windows nil)
+
+;; c and c++
+(setq c-basic-offset 4)
+
+(add-hook 'c++-mode-hook
+          (lambda ()
+            (c-set-offset 'arglist-intro '+)
+            (c-set-offset 'arglist-close 0)))
 
 (provide 'appearance)
